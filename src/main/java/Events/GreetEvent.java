@@ -7,8 +7,8 @@ public class GreetEvent extends ListenerAdapter {
 
     public void onGuildMessageReceived(GuildMessageReceivedEvent event) {
         String messageSent = event.getMessage().getContentRaw();
-        if (messageSent.equalsIgnoreCase( "hello")){
-            event.getChannel().sendMessage("Hi").queue();
+        if (messageSent.equalsIgnoreCase( "i rock")){
+            event.getChannel().sendMessage("you rule").queue();
         }
     }
 }

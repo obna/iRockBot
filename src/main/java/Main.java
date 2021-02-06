@@ -5,6 +5,6 @@ public class Main {
     private static final String IROCKBOT_KEY = "irockbot-token.txt";
 
     public static void main(String[] args) throws Exception {
-        JDA jda = new JDABuilder(IROCKBOT_KEY).build();
+        JDA jda =  JDABuilder.createDefault(IROCKBOT_KEY).build();
     }
 }
